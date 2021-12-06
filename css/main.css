@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --grid-cols:1;
+    --grid-rows:1;
+    
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    animation: myback 20s infinite;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-rows: repeat(var(--grid-row), 1fr);
+    border: red 2px solid;
+    width: 700px;
+    height: 500px;
+    
+}
+
+.boxes {
+   /* width: 18px;
+    height: 10px; */
+    border: solid 1px black;
+    background-color: cadetblue;
+}
+
+#rbtn {
+    color: red;
+    background-color: black;
+    border-radius: 1em;
+}
+
+#rtbtn {
+    color: red;
+    background-color: black;
+    border-radius: 1em;
+}
+
+@keyframes myback {
+    0% {background-color: white;}
+    20% {background-color: red;}
+    40% {background-color: blue;}
+    60% {background-color: yellow;}
+    80% {background-color: purple;}
+    100% {background-color: dimgray;}
+}
+
+header {
+    text-align: center;
+    font-family: cursive;
+}
+
+.htitle {
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
